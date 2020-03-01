@@ -1,0 +1,24 @@
+{
+    "Include": "default.json",
+    "Project": {
+        "SolutionName": "Sitecore-Hackathon",
+        "SourceRoot": "C:\\inetpub\\wwwroot\\hackathon-2020",
+        "DeployRoot": "C:\\inetpub\\wwwroot\\sc930Hacksc.dev.local",
+        "MSBuild": {
+            "ToolsVersion": "16.0",
+            "Verbosity": "minimal",
+            "Configuration": "Debug"
+        }
+    },
+    "Gulp": {
+        "DeployFolder": "C:\\\\inetpub\\\\wwwroot\\\\sc930Hacksc.dev.local",
+        "SourceRoot": "C:\\\\inetpub\\\\wwwroot\\\\hackathon-2020"
+    },
+    "Unicorn": {
+        "SourceFolder": "C:\\inetpub\\wwwroot\\hackathon-2020\\src",
+        "Serialization": "false"
+    },
+    "Site": {
+        "Address": "https://sc930Hacksc.dev.local/"
+    }
+}

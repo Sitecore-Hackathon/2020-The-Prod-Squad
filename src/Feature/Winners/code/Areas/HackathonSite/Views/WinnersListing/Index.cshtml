@@ -1,0 +1,51 @@
+﻿@using Sitecore.Links
+@using Sitecore.Resources.Media
+@using Sitecore.Web.UI.WebControls
+@model SitecoreHackathon.Feature.Winners.Areas.HackathonSite.Models.WinnersListingModel
+
+@if (Model.WinnerDetails.Count > 0)
+{
+    foreach (var winnerDetail in Model.WinnerDetails)
+    {
+        <div class="col-12">
+            <h2 class="teams-bar"><span>@winnerDetail.WinnerItem.Fields["Winner Title"].Value</span></h2>
+        </div>
+        <div class="row text-center mt-4 p-4">
+            <div class="card col-12 col-sm-6 col-md-4 p-0 shadow">
+                <div class="card-header bg-danger text-light"><h4>@winnerDetail.WinningTeam.TeamName</h4></div>
+                <div class="card-img" style="background-image:url(@(winnerDetail.WinningTeam.TeamLogo != null &&
+                     winnerDetail.WinningTeam.TeamLogo.MediaItem != null ? MediaManager.GetMediaUrl(winnerDetail.WinningTeam.TeamLogo.MediaItem) : "https://c.wallhere.com/photos/ee/c4/1920x1200_px_cave_cliff_Dark_Huge_landscape_Malaysia_nature-1105158.jpg!d")">&nbsp;</div>
+                <div class="card-body p-0">
+                    <h5 class="card-title bg-secondary text-light p-3 m-0">USA</h5>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var teamMember in winnerDetail.WinningTeam.TeamMembers)
+                        {
+                            <li class="list-group-item">
+                                @teamMember.FullName<br />
+                                @if (!string.IsNullOrEmpty(teamMember.TwitterUrl))
+                                {
+                                    <a href="@teamMember.TwitterUrl" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                                }
+                                &nbsp;&nbsp;
+                                @if (!string.IsNullOrEmpty(teamMember.LinkedInUrl))
+                                {
+                                    <a href="@teamMember.LinkedInUrl" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                }
+                                &nbsp;&nbsp;
+                                @if (!string.IsNullOrEmpty(teamMember.GitHubUrl))
+                                {
+                                    <a href="@teamMember.GitHubUrl" target="_blank"><i class="fab fa-github-square"></i></a>
+                                }
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-8 text-left">
+                <div>@Html.Raw(winnerDetail.WinnerItem.Fields["Body Content"].Value)</div>
+                <h4 class="text-center"><a href="@winnerDetail.WinnerItem.Fields["Winner Github Url"].Value" class="win-link" target="_blank">Project Git Hub</a></h4>
+                <h4 class="text-center"><a href="@winnerDetail.WinnerItem.Fields["Winner Video Url"].Value" class="win-link" target="_blank">Project Video</a></h4>
+            </div>
+        </div>
+    }
+}

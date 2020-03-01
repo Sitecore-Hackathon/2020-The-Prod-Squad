@@ -1,0 +1,12 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+	var isEditClass = Sitecore.Context.PageMode.IsExperienceEditor ? "is-editing" : "";
+}
+
+@if (Sitecore.Context.PageMode.IsExperienceEditor || Model.Item != null && Model.Item.Fields["Text"] != null && !string.IsNullOrEmpty(Model.Item.Fields["Text"].Value))
+{
+    <div class="rich-text @isEditClass">
+        @Html.Sitecore().Field("Text")
+    </div>
+}

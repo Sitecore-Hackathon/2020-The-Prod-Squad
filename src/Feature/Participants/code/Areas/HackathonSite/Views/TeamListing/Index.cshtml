@@ -1,0 +1,44 @@
+﻿@using Sitecore.Links
+@using Sitecore.Resources.Media
+@model SitecoreHackathon.Feature.Participants.Areas.HackathonSite.Models.TeamListingModel
+
+<div class="col-12">
+	<h2 class="teams-bar"><span>TEAMS</span></h2>
+</div>
+<div class="row align-items-stretch">
+	@foreach (var team in Model.Teams)
+	{
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-4">
+			<div class="card p-0 shadow">
+				<div class="card-header bg-danger text-light"><h4>@team.TeamName</h4></div>
+				<div class="card-img" style="background-image:url(@(team.TeamLogo != null && team.TeamLogo.MediaItem != null ?
+					                                                  MediaManager.GetMediaUrl(team.TeamLogo.MediaItem) : "https://c.wallhere.com/photos/ee/c4/1920x1200_px_cave_cliff_Dark_Huge_landscape_Malaysia_nature-1105158.jpg!d")">&nbsp;</div>
+				<div class="card-body p-0">
+					<h5 class="card-title bg-secondary text-light p-3">@team.CountryName</h5>
+					<ul class="list-group list-group-flush">
+						@foreach (var teamMember in team.TeamMembers)
+						{
+							<li class="list-group-item">
+								@teamMember.FullName<br />
+								@if (!string.IsNullOrEmpty(teamMember.TwitterUrl))
+								{
+									<a href="@teamMember.TwitterUrl" target="_blank"><i class="fab fa-twitter-square"></i></a>
+								}
+								&nbsp;&nbsp;
+								@if (!string.IsNullOrEmpty(teamMember.LinkedInUrl))
+								{
+									<a href="@teamMember.LinkedInUrl" target="_blank"><i class="fab fa-linkedin"></i></a>
+								}
+								&nbsp;&nbsp;
+								@if (!string.IsNullOrEmpty(teamMember.GitHubUrl))
+								{
+									<a href="@teamMember.GitHubUrl" target="_blank"><i class="fab fa-github-square"></i></a>
+								}
+							</li>
+						}
+					</ul>
+				</div>
+			</div>
+		</div>
+	}
+</div>

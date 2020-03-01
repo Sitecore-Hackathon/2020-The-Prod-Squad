@@ -1,0 +1,22 @@
+﻿---
+ID: "382ddc7d-733a-4b2f-b698-02c1819fb6f6"
+Parent: "7feedcf1-71a0-47bc-9416-6c83482a168d"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/HackathonSite/8x4 Content Left
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "content-8x4-left"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{CCC8B83B-5F63-4BF1-9020-3A7AD3B76338}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T124516Z

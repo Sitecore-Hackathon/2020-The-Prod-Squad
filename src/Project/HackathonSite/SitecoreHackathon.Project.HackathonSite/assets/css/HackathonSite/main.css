@@ -1,0 +1,118 @@
+﻿#headerwrap {
+	border-bottom: 2px solid #bf3417;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+.wrap {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.global-footer {
+	color: #d0d0d0;
+	min-height: 400px;
+}
+
+.dropdown {
+	margin: 8px;
+}
+
+.btnsizer {
+	height: 23px;
+}
+
+.hidden {
+	display: none;
+}
+
+.is-editing {
+	min-height: 100px;
+}
+
+#mobile-toggle {
+	padding: 10px;
+	width: 50px;
+	display: inline-block;
+	border: 2px solid #bf3417;
+	color: #bf3417;
+	border-radius: .25rem;
+}
+
+.card-img {
+	height: 150px;
+	margin: auto;
+	padding: 15px;
+	background-image: url(https://c.wallhere.com/photos/ee/c4/1920x1200_px_cave_cliff_Dark_Huge_landscape_Malaysia_nature-1105158.jpg!d);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card h5,
+.card-title {
+	margin-bottom: 0;
+}
+
+.fa-twitter-square,
+.fa-linkedin,
+.fa-github-square {
+	font-size: 1.5rem;
+}
+
+.list-group-item {
+	line-height: 1.75em;
+	padding: 0.5em 1.25em;
+}
+
+.teams-bar{
+    overflow: hidden;
+    text-align: center;
+}
+.teams-bar > span{
+    position: relative;
+    display: inline-block;
+}
+.teams-bar > span:before, .teams-bar > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 591px; /* half of limiter*/
+    margin: 0 20px;
+}
+.teams-bar > span:before{
+    right: 100%;
+}
+.teams-bar > span:after{
+    left: 100%;
+}
+
+@media (max-width: 991.98px) {
+	.dropdown-menu {
+		border: none;
+	}
+}
+
+@media(max-width: 767.98px) {
+	.section {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+.jumbotron {
+	background-size: cover;
+}
+
+.jumbo-img {
+	max-width: 40%;
+}
+
+#timer {
+	display: inline-block;
+	padding: 20px;
+	font-size: 3.5rem;
+}

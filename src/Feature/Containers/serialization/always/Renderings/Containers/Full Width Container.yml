@@ -1,0 +1,18 @@
+﻿---
+ID: "e742e2f7-5dca-4381-b3de-786018be9e1c"
+Parent: "3d24b01d-95d9-4476-8852-d7e2a5fe88c7"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Containers/Full Width Container
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Containers/FullWidthContainer.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T101710Z

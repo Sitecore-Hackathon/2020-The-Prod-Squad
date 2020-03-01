@@ -1,0 +1,14 @@
+﻿---
+ID: "3d0b6706-f406-4268-80d0-aed41ede306f"
+Parent: "e88917ca-c93c-4ed4-9e99-906c4a11c81c"
+Template: "e88917ca-c93c-4ed4-9e99-906c4a11c81c"
+Path: /sitecore/templates/Feature/PageContent/Hackathon Year Page/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T170819Z

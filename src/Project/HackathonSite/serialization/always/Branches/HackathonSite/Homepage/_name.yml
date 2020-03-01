@@ -1,0 +1,14 @@
+﻿---
+ID: "7f09fdb5-df28-4f5a-9f98-7a244c205ac6"
+Parent: "6ec38317-a329-4744-b01d-350eba6a3341"
+Template: "e387cb10-2953-4b0a-884f-fdc744126f79"
+Path: /sitecore/templates/Branches/Project/HackathonSite/Homepage/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T181950Z

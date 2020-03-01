@@ -1,0 +1,50 @@
+﻿@using Sitecore.Links
+@model SitecoreHackathon.Feature.Global.Areas.HackathonSite.Models.HeaderModelView
+
+<header id="headerwrap" class="bg-light">
+    <div class="wrap mx-auto pt-2">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="d-flex flex-grow-1 h-100">
+                <span class="w-100 d-lg-none d-block"><!-- hidden spacer --></span>
+	            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+		            @Html.Sitecore().Field("Logo Mobile", Model.Datasource, new { @class = "img-fluid" })
+	            </a>
+	            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block col-9" href="#">
+		            @Html.Sitecore().Field("Logo", Model.Datasource, new { @class = "img-fluid" })
+	            </a>
+                <div class="col-3 text-right d-lg-none">
+                    <div id="mobile-toggle" type="button" data-toggle="collapse" data-target="#navigation">
+                        <div id="navbar-hamburger" class="btnsizer text-center"><i class="fas fa-bars"></i></div>
+                        <div id="navbar-close" class="btnsizer hidden text-center"><i class="fas fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navigation">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+	                @foreach (var navItem in Model.PrimaryNavItems)
+	                {
+		                <li class="nav-item">
+			                <a href="@LinkManager.GetItemUrl(navItem)" class="nav-link m-2 menu-item nav-active">@navItem.Fields["Page Title"]</a>
+		                </li>
+	                }
+
+	                <li class="nav-item">
+		                <div class="dropdown show">
+							@if (@Model.HackathonsOverviewItem != null)
+							{
+								<a class="dropdown-toggle nav-link" href="#" role="button" id="hackathondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@Model.HackathonsOverviewItem.Fields["Page Title"]</a>
+
+								<div class="dropdown-menu dropdown-menu-right text-right bg-light" aria-labelledby="dropdownMenuLink">
+									@foreach (var hackathon in Model.Hackathons)
+									{
+										<a class="dropdown-item" href="@LinkManager.GetItemUrl(hackathon)">@hackathon.Fields["Page Title"]</a>
+									}
+								</div>
+							}
+		                </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,21 @@
+﻿---
+ID: "db3db92d-62ba-4082-ae86-e598d3c47034"
+Parent: "4e993a7b-2143-4405-9414-c09dc9deb6c6"
+Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
+Path: /sitecore/layout/Layouts/Project/Hackathon Site/Hackathon Site Layout
+DB: master
+SharedFields:
+- ID: "70dc08d9-cda2-4f04-aa35-c11fd7138066"
+  Hint: Area
+  Value: Hackathon Site
+- ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
+  Hint: Path
+  Value: /Areas/HackathonSite/Views/Shared/HackathonSiteLayout.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T082704Z

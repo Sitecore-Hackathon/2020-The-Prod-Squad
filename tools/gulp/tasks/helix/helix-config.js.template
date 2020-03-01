@@ -1,0 +1,16 @@
+module.exports = function () {
+	var config = {
+		siteUrl: "${Site.Address}",
+		websiteRoot: "${Gulp.DeployFolder}",
+		solutionName: "${Project.SolutionName}",
+		buildConfiguration: "${Project.MSBuild.Configuration}",
+		buildToolsVersion: ${Project.MSBuild.ToolsVersion},
+		visualStudioVersion : "${Project.MSBuild.ToolsVersion}",
+		buildMaxCpuCount: 1,
+    		buildVerbosity: "${Project.MSBuild.Verbosity}",
+    		buildPlatform: "Any CPU",
+    		publishPlatform: "AnyCpu",
+	    	runCleanBuilds: false
+    }
+    return config;
+}

@@ -1,0 +1,18 @@
+﻿---
+ID: "74f98725-7c46-4f35-92a2-cbc7e0adb24d"
+Parent: "eab542cb-e55d-4287-b1de-efb8b638739b"
+Template: "7adb6fa0-01e7-4c51-b8ad-3a3b594c0423"
+Path: /sitecore/templates/Branches/Project/HackathonSite/Homepage/$name/Configuration/Footer Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T182427Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

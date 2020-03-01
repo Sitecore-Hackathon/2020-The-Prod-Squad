@@ -1,0 +1,24 @@
+﻿---
+ID: "d6a80241-fad8-4097-aa91-c324892aa0c7"
+Parent: "31b9c97b-217f-40fc-9f31-2d6992677e97"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Winners/Winners Listing
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SitecoreHackathon.Feature.Winners.Areas.HackathonSite.Controllers.WinnersListingController, SitecoreHackathon.Feature.Winners
+- ID: "fc5c3451-dfde-4778-9901-5d0b1da1e212"
+  Hint: Area
+  Value: HackathonSite
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T161624Z

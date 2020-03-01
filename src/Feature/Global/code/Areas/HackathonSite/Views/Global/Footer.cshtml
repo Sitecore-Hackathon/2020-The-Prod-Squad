@@ -1,0 +1,15 @@
+﻿@model SitecoreHackathon.Feature.Global.Areas.HackathonSite.Models.FooterModelView
+
+@{
+	var isEditClass = Sitecore.Context.PageMode.IsExperienceEditor ? "is-editing" : "";
+}
+
+<footer class="global-footer bg-dark">
+	<div class="wrap">
+		<div class="p-4 section m-4">
+			<div class="rich-text @isEditClass">
+				@Html.Sitecore().Field("Body", Model.Datasource)
+			</div>
+		</div>
+	</div>
+</footer>

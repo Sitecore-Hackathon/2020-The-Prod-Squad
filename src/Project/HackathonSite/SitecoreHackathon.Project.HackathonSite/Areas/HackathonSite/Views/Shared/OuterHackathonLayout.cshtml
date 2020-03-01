@@ -1,0 +1,30 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.ExperienceForms.Mvc.Html
+@using Sitecore.Mvc.Analytics.Extensions
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    @Html.Sitecore().Rendering("/sitecore/layout/renderings/feature/metadata/html page title")
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    @Html.RenderFormStyles()
+    <link rel="stylesheet" href="~/assets/css/HackathonSite/main.css" />
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<body>
+    @RenderBody()
+
+    @Html.RenderFormScripts()
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="~/assets/js/HackathonSite/index.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

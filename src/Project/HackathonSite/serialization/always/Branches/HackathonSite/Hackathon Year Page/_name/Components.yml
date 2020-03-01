@@ -1,0 +1,18 @@
+﻿---
+ID: "42942a42-a907-4c31-8de9-9c7f61bca882"
+Parent: "abbdb7ce-249e-44a4-964f-226d538d8770"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/templates/Branches/Project/HackathonSite/Hackathon Year Page/$name/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T181035Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

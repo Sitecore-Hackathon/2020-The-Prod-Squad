@@ -1,0 +1,24 @@
+﻿---
+ID: "5b64da94-f68a-4f80-9dde-58caf6924209"
+Parent: "04f04598-b4c6-4a02-ace6-fcc51a6969e2"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Participants/Team Listing
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SitecoreHackathon.Feature.Participants.Areas.HackathonSite.Controllers.TeamListingController, SitecoreHackathon.Feature.Participants
+- ID: "fc5c3451-dfde-4778-9901-5d0b1da1e212"
+  Hint: Area
+  Value: HackathonSite
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T140358Z
